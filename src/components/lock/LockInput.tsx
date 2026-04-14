@@ -96,7 +96,7 @@ export function LockInput ({
       <label 
         htmlFor={`lock-input__input-${elementId}`}
         id={`lock-input__label-${elementId}`}
-        className='font-normal font-heading text-sm'>
+        className='font-normal text-foreground font-heading text-sm'>
         {label}
       </label>
       <LockItem>
@@ -108,7 +108,7 @@ export function LockInput ({
           onFocus={onFocusHandler}
           onChange={onChangeHandler}
           onKeyDown={onKeyDownHandler}
-          className='lock-input flex px-0 p-1.5 w-23 h-27.5 font-bold text-7xl rounded-md border border-black bg-white text-[#333333] focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white focus-visible:outline-dotted'
+          className='flex px-0 p-1.5 w-23 h-27.5 font-bold text-7xl rounded-md border border-black bg-white text-[#333333] focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white focus-visible:outline-dotted shadow-2xl text-center'
           value={inputValue}>
         </input>
         <LockItemActions>

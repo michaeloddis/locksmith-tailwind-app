@@ -7,8 +7,7 @@ interface ICodeItem {
 }
 
 export function CodeItem({
-    value = 0,
-    divider = false
+    value = 0
 }: ICodeItem) {
   const [lockValue, setLockValue] = useState(value);
 
@@ -25,9 +24,8 @@ export function CodeItem({
   }, [value]);
 
   return (
-    <div className='flex flex-col justify-center items-center gap-2 code-item'>
+    <div className='flex flex-col justify-center items-center gap-2 rounded-md font-bold text-7xl w-23 h-27.5 leading-26.25 px-5 py-0 border bg-background/30 shadow-md'>
       {lockValue}
-      {divider ? <hr className='code-item__divider' /> : null}
     </div>
   );
 }
