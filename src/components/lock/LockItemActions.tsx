@@ -8,7 +8,7 @@ export function LockItemActions ({
 	children
 }: ILockItemActions) {
 	return (
-		<div className='lock-item-actions'>
+		<div className='flex flex-col justify-center items-center gap-2'>
 			{children}
 		</div>
 	)

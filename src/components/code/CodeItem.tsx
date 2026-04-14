@@ -25,7 +25,7 @@ export function CodeItem({
   }, [value]);
 
   return (
-    <div className='code-item'>
+    <div className='flex flex-col justify-center items-center gap-2 code-item'>
       {lockValue}
       {divider ? <hr className='code-item__divider' /> : null}
     </div>

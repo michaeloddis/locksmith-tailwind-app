@@ -8,7 +8,7 @@ export function Lock({
   children
 }: ILock) {
   return (
-    <div className='lock'>
+    <div className='flex flex-row justify-center items-center gap-15 ml-6'>
       {children}
     </div>
   )
