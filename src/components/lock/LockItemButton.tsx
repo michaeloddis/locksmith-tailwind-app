@@ -12,7 +12,7 @@ export function LockItemButton({
 	onClick
 }: ILockItemButton) {
 	return (
-		<Button variant='outline'
+		<Button variant='secondary'
 			onClick={onClick}>
 			{children}
 		</Button>
